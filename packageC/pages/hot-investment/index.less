@@ -1,0 +1,115 @@
+.page-hot-investment {
+  .investment {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .investment-people {
+    width: calc(~"100% - 46px");
+    padding: 0 10px;
+    background: #fff;
+    border-radius: 4px;
+		.investment-people-content {
+			display: flex;
+			height: 100%;
+			align-items: center;
+		}
+    .investment-people-item {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 160px;
+      padding-right: 10px;
+      image {
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        margin: 0 6px 0 0;
+      }
+      text {
+        display: inline-block;
+        &:nth-of-type(1) {
+          max-width: 55px;
+          vertical-align: bottom;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: #0E4A86;
+          margin-right: 5px;
+        }
+        &:nth-of-type(2) {
+          width: 56px;
+        }
+      }
+    }
+  }
+  .hot-banner {
+		margin: 16px 0;
+		border-radius: 4px;
+		overflow: hidden;
+  }
+  .effect-display-container {
+		position: relative;
+		margin: 16px 0;
+		border-radius: 4px;
+		overflow: hidden;
+		.effect-display-brand {
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 1;
+		}
+  }
+   /* ä¸šæéœ€æ±*/
+  .format-demand {
+    .format-demand-content {
+      .sign {
+				margin-right: 10px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+			margin-bottom: 10px;
+    }
+    .sign {
+      width: 55px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      color: #333;
+      background: #fff;
+      border: solid 1px;
+      border-radius: 4px;
+      font-size: 10px;
+			&.lg-1 {
+				display: flex;
+				align-items: center;
+				line-height: 14px;
+			}
+      &.green {
+        border-color: #6DD400;
+      }
+      &.yellow {
+        border-color: #F7B500;
+      }
+      &.blue {
+        border-color: #009BE2;
+      }
+      &.brown {
+        border-color: #6B3906;
+      }
+    }
+  }
+	.format-demand-footer {
+		padding-bottom: 18px;
+	  display: flex;
+	  justify-content: space-between;
+	  .left {
+	    display: flex;
+	    justify-content: space-between;
+	    > view {
+	      margin-right: 10px;
+	    }
+	  }
+	}
+}

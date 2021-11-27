@@ -1,0 +1,8 @@
+/**
+ * 覆盖样式
+ */
+button[type=default] {
+	color: #fff;
+	background-color: #0E4A86;
+	font-weight: 400;
+}

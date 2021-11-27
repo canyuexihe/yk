@@ -1,0 +1,139 @@
+.page-project-intro {
+	.project-intro {
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 10px;
+		.custom-step-container {
+			width: calc(~"100% - 40px");
+		}
+	}
+	.project-block {
+		margin-bottom: 10px;
+		padding: 15px;
+		background: #fff;
+		border-radius: 4px;
+		.title{
+			font-size: 16px;
+			color:  #333;
+		}
+		.line {
+			display: flex;
+			justify-content: space-between;
+			margin: 15px 0;
+			view {
+				&:nth-of-type(1) {
+					width: 80px;
+					height: 1px;
+					background: #0E4A86;
+				}
+				&:nth-of-type(2) {
+					width: calc(~"100% - 90px");
+					height: 1px;
+					background: #909090;
+				}
+			}
+		}
+		.sub-title {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-start;
+			margin-bottom: 15px;
+			font-weight: bold;
+			&.text-intro {
+				margin: 8px 0;
+				font-weight: normal;
+			}
+			.sign {
+				display: inline-block;
+				width: 15px;
+				height: 15px;
+				border-radius: 2px;
+				margin-right: 10px;
+				margin-top: 2px;
+			}
+			&.default {
+				color: #0E4A86;
+				.sign {
+					background: #fff;
+					border: solid 1px #0E4A86;
+				}
+			}
+			&.primary {
+				color: #0E4A86;
+				.sign {
+					background: #0E4A86;
+				}
+			}
+			&.orange {
+				color: #FE6B2F;
+				.sign {
+					background: #FE6B2F;
+				}
+			}
+			&.orange2 {
+				color: #FE6B2F;
+				.sign {
+					background: #fff;
+					border: solid 1px #FE6B2F;
+				}
+			}
+			.text-over {
+				width: calc(~"100% - 30px")
+			}
+		}
+		.w-100 {
+			width: 100%;
+		}
+		.mt-8 {
+			margin-top: 8px;
+		}
+		.mt-5 {
+			margin-top: 5px!important;
+		}
+		.mb-0 {
+			margin-bottom: 0px!important;
+		}
+		.text {
+			display: block;
+			margin: 10px 0;
+		}
+		.text-center {
+			text-align: center;
+		}
+		.fn-333 {
+			color: #333;
+		}
+		.fn-orange {
+			color: #FE6B2F;
+		}
+		.fn-primary {
+			color: #0E4A86;
+		}
+		.tc {
+			text-align: center;
+		}
+		.img-group-container {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 5px -5px 0 -5px;
+			.w-33 {
+				width: 33.33%;
+			}
+			.w-50 {
+				width: 50%;
+			}
+			.w-18 {
+				width: 18%;
+			}
+			.w-32 {
+				width: 32%;
+			}
+			view {
+				padding: 0 5px;
+			}
+			image {
+				width: 100%;
+			}
+		}
+	}
+}

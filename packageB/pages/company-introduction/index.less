@@ -1,0 +1,142 @@
+.page-company-intro {
+	.banner {
+		.banner-item {
+			width: 100%;
+		}
+	}
+	.cultrue-street {
+		width: 100%;
+		background: #0E4A86;
+		border-radius: 4px;
+		padding: 10px;
+		margin-top: 10px;
+		.title {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			text {
+				display: block;
+				color: #fff;
+				font-size: 14px;
+			}
+			image {
+				width: 18px;
+				height: 18px;
+			}
+		}
+		.address {
+			display: block;
+			color: #fff;
+			font-size: 10px;
+			&::before {
+				content: '';
+				display: block;
+				width: 100%;
+				height: 1px;
+				margin: 10px 0;
+				border-bottom: solid 1px rgba(255,255,255,.25);
+			}
+		}
+	}
+	.contact-block {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 10px;
+		> view {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 4px;
+			height: 36px;
+			margin-bottom: 10px;
+			color: #0E4A86;
+			background: #fff;
+			&:nth-of-type(2n+1) {
+				width: 36px;
+			}
+			&:nth-of-type(2),
+			&:nth-of-type(6) {
+				width: 60px;
+				margin: 0 10px;
+			}
+			&:nth-of-type(4),
+			&:nth-of-type(8) {
+				width: calc(~"100% - 162px");
+				margin-left: 10px;
+			}
+			image {
+				width: 28px;
+				height: 28px;
+			}
+		}
+	}
+	.company-intro {
+		.text {
+			margin: 10px 0;
+			padding: 15px;
+			background: #fff;
+			border-radius: 4px;
+		}
+	}
+	.related-project {
+		margin-bottom: 10px;
+	}
+	.city-view {
+		background: #fff;
+		margin-top: 10px;
+		padding: 10px;
+		border-radius: 4px;
+		.title {
+			font-size: 16px;
+			color: #0E4A86;
+		}
+		.line {
+			display: flex;
+			justify-content: space-between;
+			margin: 10px 0;
+			view {
+				&:nth-of-type(1) {
+					width: 80px;
+					height: 1px;
+					background: #0E4A86;
+				}
+				&:nth-of-type(2) {
+					width: calc(~"100% - 90px");
+					height: 1px;
+					background: #909090;
+				}
+			}
+		}
+		image {
+			width: 100%;
+			height: 150px;
+		}
+	}
+	.common-title {
+		display: flex;
+		justify-content: space-between;
+		.right {
+			width: calc(~"100% - 46px");
+			display: flex;
+			justify-content: space-between;
+			height: 36px;
+			padding: 8px 10px;
+			background: #fff;
+			> view > text {
+				&:nth-of-type(1) {
+					color: #333;
+				}
+				&:nth-of-type(2) {
+					color: #0E4A86;
+				}
+			}
+			image {
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+	.fs-12 {
+		font-size: 12px;
+	}
+}

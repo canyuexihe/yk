@@ -1,0 +1,106 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// 首页
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "招商小程序"
+			}
+		},
+		// 授权页
+		{
+			"path": "pages/auth/index",
+			"style": {
+				"navigationBarTitleText": "授权"
+			}
+		},
+		// 留言板
+		{
+			"path": "pages/message-board/index",
+			"style": {
+				"navigationBarTitleText": "留言板"
+			}
+		},
+		// 公共提示页
+		{
+			"path": "pages/common-prompt/index",
+			"style": {
+				"navigationBarTitleText": "提示页"
+			}
+		}
+	],
+	"subPackages": [{
+			"root": "packageA",
+			"pages": [
+				// 合作意向表单
+				{
+					"path": "pages/cooperate-form-page/index",
+					"style": {
+						"navigationBarTitleText": "商户合作"
+					}
+				},
+				// 招商意向表单
+				{
+					"path": "pages/canvass-business-form-page/index",
+					"style": {
+						"navigationBarTitleText": "参与招商"
+					}
+				},
+				// 留言 - 表单
+				{
+					"path": "pages/message-board-form-page/index",
+					"style": {
+						"navigationBarTitleText": "留言"
+					}
+				}
+			]
+		},
+		{
+			"root": "packageB",
+			"pages": [
+				// 企业介绍
+				{
+					"path": "pages/company-introduction/index",
+					"style": {
+						"navigationBarTitleText": "企业介绍"
+					}
+				}
+			]
+		},
+		{
+			"root": "packageC",
+			"pages": [
+				// 火热招商
+				{
+					"path": "pages/hot-investment/index",
+					"style": {
+						"navigationBarTitleText": "火热招商"
+					}
+				},
+
+				// 项目介绍
+				{
+					"path": "pages/project-intro/index",
+					"style": {
+						"navigationBarTitleText": "项目介绍"
+					}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			// "vant-(.*)": "@/wxcomponents/vant/$1/index",
+			"g-(.*)": "@/components/$1/index"
+			// uni-ui 规则如下配置
+			// "^uni-(.*)": "@/uni_modules/uni-$1/components/uni-$1/uni-$1.vue"
+		}
+	}
+}
