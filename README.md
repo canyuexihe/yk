@@ -7,4 +7,4 @@
 ### 资料
 + 微信小程序ID wx2528d63f3f8e88fc
 + DCloudID 	__UNI__A56E667
-test aa
+test aa cc
